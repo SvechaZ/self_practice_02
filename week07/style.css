@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 250px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #333232;
+  padding: 60px;
+  border-radius: 8px;
+  width: 130px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.card p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: white;
+}
+
+.card button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #585858;
+  color: white;
+  cursor: pointer;
+}
+.card button:hover {
+  background: #bdbdbd;
+}
