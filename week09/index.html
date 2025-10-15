@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Theme Selector</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-size: medium;
+      transition: all 0.3s ease;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    label { display: block; margin-top: 10px; }
+    button { margin-top: 15px; padding: 8px 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🎨 Theme Selector</h2>
+
+    <label>Background Color:</label>
+    <select id="bgColor">
+      <option value="white">White</option>
+      <option value="lightblue">Light Blue</option>
+      <option value="lightyellow">Light Yellow</option>
+      <option value="lightgray">Light Gray</option>
+    </select>
+
+    <label>Font Color:</label>
+    <select id="fontColor">
+      <option value="black">Black</option>
+      <option value="darkblue">Dark Blue</option>
+      <option value="darkred">Dark Red</option>
+      <option value="green">Green</option>
+    </select>
+
+    <label>Font Size:</label>
+    <select id="fontSize">
+      <option value="small">Small</option>
+      <option value="medium" selected>Medium</option>
+      <option value="large">Large</option>
+    </select>
+
+    <div>
+      <button id="saveBtn">💾 Save</button>
+      <button id="resetBtn">♻️ Reset</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
