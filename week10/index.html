@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Tracker Plus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 To-Do Tracker Plus</h1>
+
+      <!-- Input Section -->
+      <div class="input-section">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task..."
+        />
+        <button id="addBtn">Add Task</button>
+      </div>
+
+      <!-- Search -->
+      <div class="search-section">
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search task..."
+        />
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList"></ul>
+
+      <!-- Summary Section -->
+      <div class="summary">
+        <p id="counter">Total tasks: 0</p>
+        <p id="lastAction">Last action: —</p>
+      </div>
+
+      <!-- Clear Button -->
+      <button id="clearBtn" class="danger">Clear All</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

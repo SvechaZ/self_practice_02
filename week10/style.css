@@ -1,0 +1,138 @@
+/* ==== Layout & Base ==== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f5f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+/* ==== Header ==== */
+h1 {
+  text-align: center;
+  color: #1f5eff;
+  margin-bottom: 20px;
+}
+
+/* ==== Inputs ==== */
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-section button {
+  padding: 10px 16px;
+  background-color: #1f5eff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.input-section button:hover {
+  background-color: #1749c4;
+}
+
+/* ==== Search ==== */
+.search-section {
+  margin-bottom: 16px;
+}
+
+#searchBox {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ==== Task List ==== */
+#taskList {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#taskList li {
+  background: #f9fbfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+#taskList li.done {
+  text-decoration: line-through;
+  color: #999;
+  background: #e9ecf1;
+}
+
+#taskList li button {
+  background-color: transparent;
+  border: none;
+  color: #e74c3c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#taskList li button:hover {
+  color: #c0392b;
+}
+
+/* ==== Summary ==== */
+.summary {
+  margin-top: 10px;
+  background: #eef3ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ==== Clear Button ==== */
+button.danger {
+  width: 100%;
+  padding: 12px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+button.danger:hover {
+  background-color: #c0392b;
+}
